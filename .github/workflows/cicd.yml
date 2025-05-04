@@ -1,6 +1,6 @@
 # defining the name of the pipeline
 jobs:
-  deploy-to-server -o1:
+  deploy-to-server-o1:
     runs-on: ubuntu-latest
     steps:
     - name: checkout the code
