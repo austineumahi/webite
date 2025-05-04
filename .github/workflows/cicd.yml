@@ -1,7 +1,6 @@
----
 # defining the name of the pipeline
 jobs:
-  deploy-to-server -01:
+  deploy-to-server -o1:
     runs-on: ubuntu-latest
     steps:
     - name: checkout the code
@@ -16,4 +15,4 @@ name: cicd pipeline
 'on':
   push:
     Branches:
-    - main
+    - main---
