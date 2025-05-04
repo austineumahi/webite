@@ -1,0 +1,24 @@
+# defining the name of the pipeline
+name: cicd pipeline
+
+# defining the trigerring
+
+
+on:
+  push:
+    Branches:
+    - main
+
+jobs:
+  deploy-to-server:
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: checkout the code
+      uses: setup-node@v3
+    - name: display the code
+      run: ls- la
+    - name: display more thing
+      run: |
+        ls- la
+        hostnamectl
